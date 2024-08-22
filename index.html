@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page</title>
+    <style>
+        /* Add any CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+            #data-table th, #data-table td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+
+            #data-table th {
+                background-color: #f2f2f2;
+            }
+
+        #fetch-data-btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ComboBox (Dropdown) -->
+    <label for="combo-box">Select an Option:</label>
+    <select id="combo-box">
+        <!-- Options will be populated via external JavaScript -->
+    </select>
+
+    <!-- Button to Trigger Data Fetch -->
+    <button id="fetch-data-btn">Fetch Data</button>
+
+    <!-- Table Structure -->
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Hardware ID</th>
+                <th>Manufacturer</th>
+                <!-- Add more columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data rows will be inserted here by external JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Link to External JavaScript File -->
+    <script src="render.js"></script>
+</body>
+</html>
