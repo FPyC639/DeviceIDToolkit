@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Page</title>
     <style>
-        /* Add any CSS styling here */
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -17,15 +16,15 @@
             margin-top: 20px;
         }
 
-            #data-table th, #data-table td {
-                border: 1px solid #ddd;
-                padding: 8px;
-                text-align: left;
-            }
+        #data-table th, #data-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
 
-            #data-table th {
-                background-color: #f2f2f2;
-            }
+        #data-table th {
+            background-color: #f2f2f2;
+        }
 
         #fetch-data-btn {
             margin-top: 20px;
@@ -36,26 +35,24 @@
 
     <!-- ComboBox (Dropdown) -->
     <label for="combo-box">Select an Option:</label>
-    <select id="combo-box">
-        <!-- Options will be populated via external JavaScript -->
-    </select>
+    <select id="combo-box"></select>
 
     <!-- Button to Trigger Data Fetch -->
     <button id="fetch-data-btn">Fetch Data</button>
 
+    <!-- Column Selector -->
+    <label for="column-selector">Choose Columns:</label>
+    <div id="columns-area"></div>
+
+    <!-- Output area for errors or status -->
+    <div id="output" style="color: red;"></div>
+
     <!-- Table Structure -->
     <table id="data-table">
         <thead>
-            <tr>
-                <th>Description</th>
-                <th>Hardware ID</th>
-                <th>Manufacturer</th>
-                <!-- Add more columns as needed -->
-            </tr>
+            <tr></tr>
         </thead>
-        <tbody>
-            <!-- Data rows will be inserted here by external JavaScript -->
-        </tbody>
+        <tbody></tbody>
     </table>
 
     <!-- Link to External JavaScript File -->

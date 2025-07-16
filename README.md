@@ -12,6 +12,17 @@ Additionally if the options has values it then parses the option into a table:
 
 ![App](IntelProcessor.png)
 
+## July 15, 2025
+
+The application has had some updates since August of last year. It has now the ability to select the Properties of PnpEntity Class.
+Additionally it renders the selected columns in the table.
+
+![App](20250715_SelectableColumns.png)
+
+This is how long the table is if you select all the columns:
+
+![App](20250715_LongTable.png)
+
 ## Acknowledgements
 
  - Professors at Kean University

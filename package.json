@@ -6,6 +6,8 @@
   "scripts": {
     "start": "electron .",
     "package": "electron-packager . DeviceIDToolkit --platform=win32 --arch=x64 --out=dist --extra-resource=static --overwrite force",
+    "postpackage": "powershell -ExecutionPolicy Bypass -File postpackage.ps1",
+    "clean": "npx rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
