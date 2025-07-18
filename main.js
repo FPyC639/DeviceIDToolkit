@@ -10,6 +10,8 @@ function createWindow() {
         }
     });
     win.loadFile('index.html');
+
+    win.webContents.setZoomFactor(2.0);
 }
 
 app.whenReady().then(createWindow);

@@ -4,58 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Page</title>
+
+    <!-- ✅ Bulma CSS -->
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+
+    <!-- Optional custom overrides -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+        #output {
+            color: red;
         }
-
-        #data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        #data-table th, #data-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        #data-table th {
-            background-color: #f2f2f2;
-        }
-
-        #fetch-data-btn {
-            margin-top: 20px;
+        html {
+            font-size: 18px; /* Bulma default is 16px */
         }
     </style>
+    
 </head>
-<body>
+<body class="section">
 
-    <!-- ComboBox (Dropdown) -->
-    <label for="combo-box">Select an Option:</label>
-    <select id="combo-box"></select>
+    <div class="container">
+        <!-- Dropdown -->
+        <div class="field">
+            <label class="label" for="combo-box">Select an Option:</label>
+            <div class="control">
+                <div class="select">
+                    <select id="combo-box"></select>
+                </div>
+            </div>
+        </div>
 
-    <!-- Button to Trigger Data Fetch -->
-    <button id="fetch-data-btn">Fetch Data</button>
+        <!-- Fetch Button -->
+        <div class="field">
+            <div class="control">
+                <button class="button is-primary" id="fetch-data-btn">Fetch Data</button>
+            </div>
+        </div>
 
-    <!-- Column Selector -->
-    <label for="column-selector">Choose Columns:</label>
-    <div id="columns-area"></div>
+        <!-- Column Selector -->
+        <div class="field">
+            <label class="label" for="column-selector">Choose Columns:</label>
+            <div class="control" id="columns-area">
+                <!-- checkboxes will be rendered here -->
+            </div>
+        </div>
 
-    <!-- Output area for errors or status -->
-    <div id="output" style="color: red;"></div>
+        <!-- Output area for messages -->
+        <div id="output" class="has-text-danger mb-4"></div>
 
-    <!-- Table Structure -->
-    <table id="data-table">
-        <thead>
-            <tr></tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+        <!-- Table -->
+        <table class="table is-fullwidth is-striped is-hoverable" id="data-table">
+            <thead>
+                <tr></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 
-    <!-- Link to External JavaScript File -->
     <script src="render.js"></script>
 </body>
 </html>
