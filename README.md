@@ -23,6 +23,18 @@ This is how long the table is if you select all the columns:
 
 ![App](20250715_LongTable.png)
 
+## July 25, 2025
+
+The application has had an update on styling it now uses Bulma CSS. It's minimalist approach looks nice.
+
+This is without the table.
+
+![App](20250718_BulmaCSSNoTable.png)
+
+This is with the table.
+
+![App](20250718_BulmaCSSTable.png)
+
 ## Acknowledgements
 
  - Professors at Kean University
