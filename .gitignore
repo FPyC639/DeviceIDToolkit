@@ -1,3 +1,14 @@
+# Python Environments
+
+llama/
+
+# Large Language Models
+
+*.gguf
+
+# Videos
+*.mp4
+
 .DS_Store
 .env
 .gclient_done
