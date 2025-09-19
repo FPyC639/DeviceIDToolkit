@@ -6,12 +6,9 @@ llama/
 
 *.gguf
 
-<<<<<<< HEAD
 # Videos
 *.mp4
 
-=======
->>>>>>> b320953fe19ac7319a7ec63777cf4fc77d5089d3
 .DS_Store
 .env
 .gclient_done
