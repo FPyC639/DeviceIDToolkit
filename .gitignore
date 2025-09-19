@@ -1,3 +1,11 @@
+# Python Environments
+
+llama/
+
+# Large Language Models
+
+*.gguf
+
 .DS_Store
 .env
 .gclient_done

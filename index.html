@@ -17,11 +17,10 @@
             font-size: 18px; /* Bulma default is 16px */
         }
     </style>
-    
 </head>
 <body class="section">
-
     <div class="container">
+
         <!-- Dropdown -->
         <div class="field">
             <label class="label" for="combo-box">Select an Option:</label>
@@ -57,7 +56,43 @@
             </thead>
             <tbody></tbody>
         </table>
+
+        <!-- 🧠 Explain Data Button -->
+        <div class="field mt-5">
+            <label class="label">AI Explanation</label>
+            <div class="control">
+                <button class="button is-link is-light" id="explain-data-btn">🧠 Explain This Data</button>
+            </div>
+        </div>
+        
+        
+
+        <!-- Status Dropdown -->
+        <div class="field">
+            <label class="label" for="status-dropdown">Status:</label>
+            <div class="control">
+            <div class="select">
+                <select id="status-dropdown">
+                <option value="running">Running</option>
+                <option value="stopped">Stopped</option>
+                </select>
+            </div>
+            </div>
+        </div>
+        <!-- Submit Button for Llama Query -->
+        <div class="field mt-4">
+            <div class="control">
+                <button class="button is-success" id="submit-llama-query-btn">Submit Llama Query</button>
+            </div>
+        </div>
     </div>
+
+    <!-- 🧠 AI Response Output -->
+        <div class="field">
+            <div class="control">
+                <pre id="llama-response" class="box has-background-light p-4" style="white-space: pre-wrap;"></pre>
+            </div>
+        </div>
 
     <script src="render.js"></script>
 </body>
